@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/mor-fairfinder",
+	"version": "0.1.0",
+	"title": "MO Runner Fairfinder",
+	"category": "mor",
+	"icon": "tide",
+	"description": "A block to display fares in the Amtrak Website.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+
+		"margin_top": {
+			"type": "string",
+			"default": "medium"
+		},
+		"margin_bottom": {
+			"type": "string",
+			"default": "medium"
+		},
+		"position_bottom": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"textdomain": "mor-fairfinder",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

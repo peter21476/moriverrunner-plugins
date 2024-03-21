@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/mor-hero-block",
+  "version": "0.1.0",
+  "title": "MO Runnner Hero Block",
+  "category": "mor",
+  "icon": "superhero",
+  "description": "MO Runner Hero Block",
+  "example": {},
+  "supports": {
+    "html": false,
+    "color": {
+      "gradients": true
+    }
+  },
+  "attributes": {
+    "header_title": {
+      "type": "string",
+      "default": "Header Title"
+    },
+    "header_subtitle": {
+      "type": "string",
+      "default": "Header Subtitle"
+    },
+    "header_background_image": {
+      "type": "string"
+    },
+    "header_background_overlay_gradient": {
+      "type": "string",
+      "default": ""
+    },
+    "header_background_overlay_full": {
+      "type": "string",
+      "default": "#00476B"
+    },
+    "header_background_overlay_opacity": {
+      "type": "number",
+      "default": 50
+    },
+    "header_alignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "header_style": {
+      "type": "string",
+      "default": "full-height"
+    },
+    "header_height": {
+      "type": "string",
+      "default": "300"
+    }
+  },
+  "textdomain": "mor-hero-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

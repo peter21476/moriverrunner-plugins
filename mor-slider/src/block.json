@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/mor-slider",
+	"version": "0.1.0",
+	"title": "MO Runner Slider",
+	"category": "mor",
+	"icon": "format-gallery",
+	"description": "Slide Block.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+
+		"backgroundColor": {
+			"type": "string",
+			"default": "transparent"
+		},
+		"blockTitle": {
+			"type": "string",
+			"default": "MOR Slider"
+		},
+		"innerBlocksContent": {
+			"type": "array",
+			"default": []
+		},
+		"slider_type": {
+			"type": "string",
+			"default": "slider"
+		}
+
+	},
+	"textdomain": "mor-slider",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

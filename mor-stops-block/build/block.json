@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/mor-stops-block",
+  "version": "0.1.0",
+  "title": "MO Runner Stops Block",
+  "category": "mor",
+  "icon": "car",
+  "description": "Block for the MO Runner Stops",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "stops": {
+      "type": "array",
+      "default": []
+    },
+    "number_of_stops": {
+      "type": "string",
+      "default": "3"
+    },
+    "background_color": {
+      "type": "string",
+      "default": "#00476B"
+    },
+    "block_title": {
+      "type": "string",
+      "default": "Heading"
+    },
+    "block_title_color": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "block_style": {
+      "type": "string",
+      "default": "default"
+    }
+  },
+  "textdomain": "mor-stops-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

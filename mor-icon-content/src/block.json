@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/mor-icon-content",
+	"version": "0.1.0",
+	"title": "MO Runner Icon Content",
+	"category": "mor",
+	"icon": "embed-photo",
+	"description": "Icon and Content Block.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"icon": {
+			"type": "string",
+			"default": ""
+		},
+		"content": {
+			"type": "string",
+			"default": ""
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"background_color": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "mor-icon-content",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

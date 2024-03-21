@@ -1,0 +1,169 @@
+@mixin breakpoint($point) {
+    @if $point == small {
+      @media (max-width: 600px) { @content; }
+    }
+    @else if $point == medium {
+      @media (max-width: 1000px) { @content; }
+    }
+    @else if $point == large {
+      @media (max-width: 1200px) { @content; }
+    }
+  }
+
+ @function rem($value) {
+    $remValue: ($value / 16) + rem;
+    @return $remValue;
+}
+
+/**
+ * Hidden Items
+ */
+ .cds_hidden_always,
+ .cds_ff_banner,
+ .cds_ff_link,
+ .cds_ff_passengers_with_disability,
+ .cds_ff_trip_type,
+ .cds_ff_depart_time_1,
+ .cds_ff_passenger_count,
+ .cds_ff_children_travel_info,
+ .cds_ff_hr,
+ .cds_ff_ie7_fix,
+ .cds_ff_depart_date_2,
+ .cds_ff_depart_time_2,
+ img.ui-datepicker-trigger {
+	 display: none;
+ }
+
+ /**
+  * Custom Styles
+  */
+ #farefinder {
+	 width: 100%;
+ }
+ #farefinder .cds_ff_outer {
+	 width: inherit;
+	 background: rgba(255,255,255,0.2);
+	 padding: 1rem;
+	 margin: 0;
+	 border-radius: rem(5);
+ }
+ #farefinder form {
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-evenly;
+	 align-items: center;
+
+	 @include breakpoint(medium) {
+		 flex-direction: column;
+	 }
+
+ }
+ .cds_ff_origin,
+ .cds_ff_destination,
+ .cds_ff_depart_date_1,
+ .cds_ff_submit {
+	 display: inline-block;
+ }
+
+ .cds_ff_origin,
+ .cds_ff_destination,
+ .cds_ff_depart_date_1 {
+	width: 28%;
+
+	@include breakpoint(medium) {
+		width: 100%;
+	}
+ }
+
+ .cds_ff_field_origin, .cds_ff_field_destination, .cds_ff_field_depart_date_1 {
+
+	input {
+
+		background: rgba(255,255,255,0.4);
+		border: 0;
+		border-radius: rem(5);
+		color: white;
+		font-family: 'railroad-gothic-atf', sans-serif;
+		letter-spacing: rem(0.5);
+		padding: rem(10) rem(20) rem(10) rem(20);
+
+	};
+
+ }
+
+ .cds_ff_field_depart_date_1 {
+
+	width: 100%;
+
+	input {
+
+		height: rem(44);
+		margin-top: rem(10);
+		padding: rem(10) rem(20) rem(10) rem(20);
+
+	}
+
+ }
+
+ .cds_ff_label {
+
+	font-family: 'railroad-gothic-atf', sans-serif;
+	font-size: rem(24);
+	letter-spacing: rem(0.5);
+	color: white;
+	text-align: left !important;
+	strong {
+
+		font-weight: 400;
+
+	}
+
+ }
+
+ .cds_ff_submit {
+
+	input {
+
+		font-family: 'railroad-gothic-atf', sans-serif;
+		font-size: rem(24);
+		letter-spacing: rem(0.5);
+		color: white;
+		background: #00476B;
+		border: 0;
+		border-radius: rem(5);
+		padding: rem(4) rem(30) rem(4) rem(30);
+		margin-bottom: 0 !important;
+		margin-top: rem(35) !important;
+
+	}
+
+ }
+
+ .cds_ff_children_travel_info {
+
+	+ div {
+
+		display: none;
+
+	}
+
+ }
+
+ .mor-fairfinder {
+
+	&--bottom {
+
+		position: absolute;
+		bottom: calc(0vh + 100px);
+		width: 100%;
+
+		@include breakpoint(medium) {
+			position: relative;
+			bottom: unset;
+			margin-top: rem(20);
+		}
+
+	}
+
+ }
+

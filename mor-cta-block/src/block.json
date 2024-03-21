@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/mor-cta-block",
+	"version": "0.1.0",
+	"title": "MO Runner CTA Block",
+	"category": "mor",
+	"icon": "superhero-alt",
+	"description": "MO Runner CTA Block.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"align": ["wide", "full"]
+	},
+	"attributes": {
+		"innerBlocksContent": {
+			"type": "array",
+			"default": []
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "#000"
+		},
+		"backgroundImage": {
+			"type": "string",
+			"default": ""
+		},
+		"backgroundOpacity": {
+			"type": "number",
+			"default": 0.5
+		},
+		"backgroundOverlay": {
+			"type": "boolean",
+			"default": false
+		},
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"parallax_image": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"textdomain": "mor-cta-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/mor-media-content",
+  "version": "0.1.0",
+  "title": "MO Runner Media Content",
+  "category": "mor",
+  "icon": "align-pull-left",
+  "description": "MO Runner Media Content Block.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "media_image": {
+      "type": "string",
+      "default": ""
+    },
+    "media_image_position": {
+      "type": "string",
+      "default": "left"
+    },
+    "media_content_width": {
+      "type": "string",
+      "default": "full"
+    },
+    "media_content_background_color": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "media_content_overlay": {
+      "type": "boolean",
+      "default": false
+    },
+    "media_content_overlay_bottom": {
+      "type": "boolean",
+      "default": false
+    },
+    "media_content_text_width": {
+      "type": "string",
+      "default": "100%"
+    },
+    "padding_top": {
+      "type": "string",
+      "default": "medium"
+    },
+    "padding_bottom": {
+      "type": "string",
+      "default": "medium"
+    }
+  },
+  "textdomain": "mor-media-content",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

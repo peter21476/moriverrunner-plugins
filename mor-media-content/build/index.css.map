@@ -1,0 +1,1 @@
+{"version":3,"file":"index.css","mappings":";;;AAIE;EAEC;AAJH,C","sources":["webpack://mor-media-content/./src/editor.scss"],"sourcesContent":[".mor-media-content {\n\n\t&__image {\n\n\t\timg {\n\n\t\t\theight: auto;\n\n\t\t}\n\n\t}\n}\n"],"names":[],"sourceRoot":""}

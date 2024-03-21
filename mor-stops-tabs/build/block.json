@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/mor-stops-tabs",
+  "version": "0.1.0",
+  "title": "MO Runner Stops Tabs",
+  "category": "mor",
+  "icon": "welcome-widgets-menus",
+  "description": "A Tabs Block to display Stops.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "stops": {
+      "type": "array",
+      "default": []
+    },
+    "background_color": {
+      "type": "string",
+      "default": "#00476B"
+    },
+    "padding_top": {
+      "type": "string",
+      "default": "medium"
+    },
+    "padding_bottom": {
+      "type": "string",
+      "default": "medium"
+    },
+    "block_title": {
+      "type": "string",
+      "default": "Places To Stop"
+    },
+    "number_of_stops": {
+      "type": "string",
+      "default": "3"
+    }
+  },
+  "textdomain": "mor-stops-tabs",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

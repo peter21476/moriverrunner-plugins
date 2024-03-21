@@ -1,0 +1,33 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.mor-icon-content {
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.mor-icon-content__icon {
+  width: 100%;
+  height: 11.5625rem;
+  padding: 1.25rem 0;
+}
+.mor-icon-content__icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.mor-icon-content__content {
+  background: white;
+  padding: 1.875rem;
+}
+.mor-icon-content__content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.625rem;
+  color: black;
+}
+.mor-icon-content__content p {
+  font-size: 1rem;
+  color: black;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

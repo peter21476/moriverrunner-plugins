@@ -1,0 +1,190 @@
+@mixin breakpoint($point) {
+    @if $point == small {
+      @media (max-width: 767px) { @content; }
+    }
+    @else if $point == medium {
+      @media (max-width: 1000px) { @content; }
+    }
+    @else if $point == large {
+      @media (max-width: 1200px) { @content; }
+    }
+  }
+
+ @function rem($value) {
+    $remValue: ($value / 16) + rem;
+    @return $remValue;
+}
+
+
+.mor-media-content {
+	position: relative;
+	z-index: 1;
+
+	&__inner {
+		display: flex;
+		width: 100%;
+
+		@include breakpoint(small) {
+			flex-direction: column;
+		}
+
+	}
+
+	&.overlay-top {
+
+		margin-top: -40px !important;
+
+	}
+
+	&.overlay-bottom {
+
+		margin-bottom: -40px !important;
+
+	}
+
+	&.overlay-top.overlay-bottom {
+
+		.mor-media-content {
+
+			&__content {
+
+				padding: 25px !important;
+
+				p {
+					margin-bottom: 0;
+				}
+
+			}
+
+		}
+
+	}
+
+	&.full {
+
+		width:100%;
+
+	}
+
+	&.wide {
+
+		width: 100%;
+		max-width: 1260px;
+		margin: 0 auto;
+
+	}
+
+	&__image {
+
+		width: 100%;
+		max-width: 50%;
+		position: relative;
+
+		@include breakpoint(small) {
+			max-width: 100%;
+		}
+
+		img {
+
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+
+			@include breakpoint(small) {
+				position: relative;
+			}
+
+		}
+
+		&.right {
+
+			order: 2;
+
+			@include breakpoint(small) {
+				order: 1;
+			}
+
+		}
+
+
+	}
+
+	&__content {
+
+		width: 100%;
+		max-width: 50%;
+		padding: 60px;
+
+		@include breakpoint(small) {
+			padding: 20px;
+			max-width: 100%;
+			order: 2;
+		}
+
+	}
+
+	&__content-inner {
+
+		@include breakpoint(medium) {
+			max-width: 100% !important;
+		}
+
+
+	}
+
+}
+
+.full-content {
+
+	max-width: 100% !important;
+
+}
+
+.pt-small {
+
+	padding-top: rem(20);
+
+}
+
+.pt-medium {
+
+	padding-top: rem(80);
+
+}
+
+.pt-large {
+
+	padding-top: rem(160);
+
+}
+
+.pt-xlarge {
+
+	padding-top: rem(300);
+
+}
+
+.pb-small {
+
+	padding-bottom: rem(20);
+
+}
+
+.pb-medium {
+
+	padding-bottom: rem(80);
+
+}
+
+.pb-large {
+
+	padding-bottom: rem(160);
+
+}
+
+.pb-xlarge {
+
+	padding-bottom: rem(300);
+
+}

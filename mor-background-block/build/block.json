@@ -1,0 +1,62 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/mor-background-block",
+  "version": "0.1.0",
+  "title": "MO Runner Background Block",
+  "category": "mor",
+  "icon": "money",
+  "description": "Simple Background Block.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "attributes": {
+    "background_color": {
+      "type": "string",
+      "default": "transparent"
+    },
+    "background_image": {
+      "type": "string",
+      "default": ""
+    },
+    "parallax_image": {
+      "type": "boolean",
+      "default": false
+    },
+    "padding_top": {
+      "type": "string",
+      "default": "medium"
+    },
+    "padding_bottom": {
+      "type": "string",
+      "default": "medium"
+    },
+    "content_width": {
+      "type": "string",
+      "default": "medium"
+    },
+    "background_color_opacity": {
+      "type": "number",
+      "default": 100
+    },
+    "background_color_order": {
+      "type": "number",
+      "default": 3
+    },
+    "custom_width": {
+      "type": "string",
+      "default": "full"
+    }
+  },
+  "textdomain": "mor-background-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
